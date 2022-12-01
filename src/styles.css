@@ -1,6 +1,6 @@
 * {
-  font-family: Helvetica, Arial, sans-serif;
-  background-color: rgb(234, 234, 234);
+  font-family: Sono, Arial, sans-serif;
+  background-color: #E8A0BF;
 }
 
 body {
@@ -10,21 +10,33 @@ body {
 input {
   background-color: white;
   border-radius: 5px;
-  border: 1px solid rgb(97, 32, 158);
-  color: black;
+  box-shadow: 5px 5px 5px 5px #937DC2;
+  /* border: 3px solid rgb(97, 32, 158); */
+  color: #937DC2;
   font-size: 1.2rem;
   outline: none;
   padding: 10px 15px;
   width: 100%;
 }
 
+h1{
+  text-align: center;
+  font-size: 3rem;
+  color: #000000;
+  text-shadow: 2px 2px 5px #8661d5;
+  
+}
+
 h2 {
   font-size: 1.5rem;
+  color: #937DC2;
 }
 
 h3 {
   font-size: 3rem;
   margin-bottom: 5px;
+  color: #937DC2;
+  text-align: center;
 }
 
 .card-grid {
@@ -51,6 +63,7 @@ h3 {
 
 .card p {
   background-color: white;
+  color: #937DC2;
   flex: 1;
   font-size: 1.5rem;
   margin-top: 5px;
@@ -60,4 +73,14 @@ h3 {
 
 .card img {
   width: 100%;
+}
+
+.info i{
+  font-size: 2rem;
+  color: #937DC2;
+  cursor: pointer;
+}
+
+.info i:hover{
+  color: #c52068;
 }

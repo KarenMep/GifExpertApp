@@ -1,9 +1,10 @@
 import { useState } from "react"
 import { AddCategory, GifGrid } from "./components/"
+import { Informacion } from "./components/Informacion"
 
 export const GifExpertApp = () => {
     
-    const [categories, setCategories] = useState(['One Punch'])
+    const [categories, setCategories] = useState(['Overwatch'])
 
     const onAddCategory = (newCategory) => {
         if(categories.includes(newCategory)) return;
@@ -13,7 +14,8 @@ export const GifExpertApp = () => {
 
   return (
     <>
-        <h1>GifExpert App</h1>
+        <Informacion/>
+        <h1>Buscador de Gifs</h1>
 
         <AddCategory 
             onNewCategory={(value) => onAddCategory(value)}
