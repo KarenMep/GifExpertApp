@@ -6,7 +6,7 @@ import { store } from "./store"
 
 export const GifExpertApp = () => {
 
-    const [categories, setCategories] = useState([''])
+    const [categories, setCategories] = useState(['overwatch'])
 
     const onAddCategory = (newCategory) => {
         if (categories.includes(newCategory)) return;

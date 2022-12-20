@@ -1,6 +1,7 @@
-import { useState } from "react";
+// import { useState } from "react";
 import Modal from "react-modal"
-import { useUiStore } from "../hooks";
+import { useFetchGifs } from "../hooks/useFetchGifs";
+// import { useUiStore } from "../hooks";
 
 const customStyles = {
     content: {
@@ -17,23 +18,31 @@ Modal.setAppElement('#root');
 
 export const InfoModal = () => {
 
-    const {isInfoModalOpen, closeInfoModal} = useUiStore();
+    // const {isInfoModalOpen, closeInfoModal} = useUiStore();
 
-    const onCloseModal = () => {
-        console.log('Cerrando modal')
-        closeInfoModal();
-    }
+    // const onCloseModal = () => {
+    //     console.log('Cerrando modal')
+    //     // closeInfoModal();
+    //     setIsOpen(false)
+    // }
+
+    // const {modalIsOpen, closeModal} = useFetchGifs();
+
+
 
   return (
     <Modal
-        isOpen={isInfoModalOpen}
-        onRequestClose={onCloseModal}
+        isOpen={modalIsOpen}
+        onRequestClose={closeModal}
         style={customStyles}
         className='modal'
         overlayClassName='modal-fondo'
         closeTimeoutMS={200}
     >
-        <h1>Información del proyecto</h1>
+        <h1>Información del proyecto222</h1>
+        <p>Este proyecto fue realizado gracias al curso de Fernando Herrera en Udemy
+          con la ayuda de la API GIPHY 
+        </p>
     </Modal>
   )
 }
